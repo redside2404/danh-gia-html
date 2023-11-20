@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 700px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+.header h2 {
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+}
+.header .header__right {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 80px;
+}
+.header .header__right a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.header .header__right a:nth-child(4) {
+  background-color: #518164;
+  border-radius: 20px;
+  padding: 15px 30px;
+}
+
+.intro {
+  background-color: #5562D3;
+  height: 100vh;
+  padding: 0px 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro .intro__left {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 30px;
+}
+.intro .intro__left h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: white;
+}
+.intro .intro__left p {
+  color: white;
+  font-size: 20px;
+  width: 80%;
+}
+.intro .intro__left button {
+  background-color: #DA722C;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.intro .intro__left button a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+.intro .intro__right {
+  justify-self: flex-end;
+  align-self: flex-end;
+}
+.intro .intro__right img {
+  height: 500px;
+  vertical-align: middle;
+}
+.intro .content .content__student {
+  position: relative;
+  top: -90px;
+}
+.intro .content .content__student .item {
+  padding: 8px 32px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  text-wrap: nowrap;
+  position: relative;
+  z-index: 10;
+}
+.intro .content .content__student .item div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.intro .content .content__student .item h3 {
+  color: #023047;
+  font-size: 30px;
+  font-weight: bold;
+}
+.intro .content .content__student .item p {
+  text-align: center;
+  color: #023047;
+  font-size: 20px;
+}
+.intro .content .content__student .shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #3B448F;
+  border-radius: 24px;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+}
+.intro .content .content__rating {
+  position: relative;
+  top: 40px;
+  left: -30px;
+}
+.intro .content .content__rating .item {
+  padding: 8px 32px;
+  background-color: whitesmoke;
+  border-radius: 20px;
+  text-wrap: nowrap;
+  position: relative;
+  z-index: 10;
+}
+.intro .content .content__rating .item div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.intro .content .content__rating .item h3 {
+  color: #023047;
+  font-size: 30px;
+  font-weight: bold;
+}
+.intro .content .content__rating .item p {
+  text-align: center;
+  color: #023047;
+  font-size: 20px;
+}
+.intro .content .content__rating .shadow {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #3B448F;
+  border-radius: 24px;
+  top: 8px;
+  left: 8px;
+  z-index: 1;
+}
+
+.what {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 100px;
+  padding: 100px 700px;
+}
+.what .what__left {
+  position: relative;
+}
+.what .what__left .bg {
+  background-color: #023047;
+  width: 30px;
+  height: 550px;
+  border-radius: 20px;
+  position: absolute;
+  left: 100px;
+  top: -50px;
+}
+.what .what__left .left__content {
+  width: 80%;
+}
+.what .what__left .left__content .content1 {
+  position: relative;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  margin-bottom: 50px;
+  border-radius: 20px;
+}
+.what .what__left .left__content .content1 .content__header {
+  background-color: #6F7DFB;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.what .what__left .left__content .content1 .content__body {
+  padding: 30px 30px;
+}
+.what .what__left .left__content .content1 .content__body h4 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #023047;
+}
+.what .what__left .left__content .content1 .content__body p {
+  font-size: 20px;
+  color: #023047;
+}
+.what .what__left .left__content .content1 img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+}
+.what .what__left .left__content .content2 {
+  position: relative;
+  left: 20px;
+  box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
+  background-color: white;
+  border-radius: 20px;
+}
+.what .what__left .left__content .content2 .content__header {
+  background-color: #DA722C;
+  padding: 20px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.what .what__left .left__content .content2 .content__body {
+  padding: 30px 30px;
+}
+.what .what__left .left__content .content2 .content__body h4 {
+  font-size: 32px;
+  font-weight: bold;
+  color: #023047;
+}
+.what .what__left .left__content .content2 .content__body p {
+  font-size: 20px;
+  color: #023047;
+}
+.what .what__left .left__content .content2 img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  right: 25px;
+  bottom: 20px;
+}
+.what .what__right h2 {
+  font-size: 60px;
+  color: #023047;
+  font-weight: bold;
+  width: 80%;
+}
+.what .what__right p {
+  color: #023047;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 10px;
+}
+.what .what__right button {
+  margin-top: 30px;
+  background-color: #DA722C;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.what .what__right button a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}/*# sourceMappingURL=style.css.map */
