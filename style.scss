@@ -8,7 +8,6 @@
     padding: 8px 32px;
     background-color: whitesmoke;
     border-radius: 20px;
-    text-wrap: nowrap;
     position: relative;
     z-index: 10;
 
@@ -16,19 +15,19 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        gap: 10px;
+        gap: 20px;
     }
 
     h3 {
         color: #023047;
-        font-size: 30px;
+        font-size: 36px;
         font-weight: bold;
     }
 
     p {
         text-align: center;
         color: #023047;
-        font-size: 20px;
+        font-size: 16px;
     }
 }
 
@@ -136,7 +135,8 @@
                     font-size: 20px;
                     margin-top: 30px;
                     margin-bottom: 30px;
-                    width: 60%;
+                    width: 80%;
+                    line-height: 140%;
                 }
 
                 button {
@@ -155,11 +155,11 @@
 
             .content {
                 position: relative;
-
+                min-width: 200px;
                 .content__student {
                     position: absolute;
-                    top: -180px;
-                    left: -210px;
+                    top: -90px;
+                    left: 0px;
 
                     .item {
                         @include contentItem();
@@ -172,8 +172,8 @@
 
                 .content__rating {
                     position: absolute;
-                    top: 0px;
-                    left: -260px;
+                    top: 120px;
+                    left: -30px;
 
                     .item {
                         @include contentItem();
@@ -515,6 +515,7 @@
                         position: absolute;
                         right: 5px;
                         top: 2px;
+                        cursor: pointer;
                     }
 
                 }

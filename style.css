@@ -67,7 +67,8 @@
   font-size: 20px;
   margin-top: 30px;
   margin-bottom: 30px;
-  width: 60%;
+  width: 80%;
+  line-height: 140%;
 }
 .header .header__body .intro .intro__left button {
   background-color: #DA722C;
@@ -91,17 +92,17 @@
 }
 .header .header__body .intro .content {
   position: relative;
+  min-width: 200px;
 }
 .header .header__body .intro .content .content__student {
   position: absolute;
-  top: -180px;
-  left: -210px;
+  top: -90px;
+  left: 0px;
 }
 .header .header__body .intro .content .content__student .item {
   padding: 8px 32px;
   background-color: whitesmoke;
   border-radius: 20px;
-  text-wrap: nowrap;
   position: relative;
   z-index: 10;
 }
@@ -109,17 +110,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .header .header__body .intro .content .content__student .item h3 {
   color: #023047;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: bold;
 }
 .header .header__body .intro .content .content__student .item p {
   text-align: center;
   color: #023047;
-  font-size: 20px;
+  font-size: 16px;
 }
 .header .header__body .intro .content .content__student .shadow {
   position: absolute;
@@ -133,14 +134,13 @@
 }
 .header .header__body .intro .content .content__rating {
   position: absolute;
-  top: 0px;
-  left: -260px;
+  top: 120px;
+  left: -30px;
 }
 .header .header__body .intro .content .content__rating .item {
   padding: 8px 32px;
   background-color: whitesmoke;
   border-radius: 20px;
-  text-wrap: nowrap;
   position: relative;
   z-index: 10;
 }
@@ -148,17 +148,17 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
 }
 .header .header__body .intro .content .content__rating .item h3 {
   color: #023047;
-  font-size: 30px;
+  font-size: 36px;
   font-weight: bold;
 }
 .header .header__body .intro .content .content__rating .item p {
   text-align: center;
   color: #023047;
-  font-size: 20px;
+  font-size: 16px;
 }
 .header .header__body .intro .content .content__rating .shadow {
   position: absolute;
@@ -476,6 +476,7 @@
   position: absolute;
   right: 5px;
   top: 2px;
+  cursor: pointer;
 }
 .footer .container p {
   color: white;
