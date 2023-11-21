@@ -5,88 +5,96 @@
 }
 
 .header {
+  background-image: linear-gradient(#6F7DFB 0%, #26308C 100%);
+  height: 100vh;
+  width: 100%;
+}
+.header .header__body {
+  max-width: 1134px;
+  margin: 0 auto;
+}
+.header .header__body .header__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 30px 700px;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
+  padding: 19px 0;
 }
-.header h2 {
+.header .header__body .header__nav h2 {
   font-size: 3rem;
   font-weight: 900;
   color: white;
 }
-.header .header__right {
+.header .header__body .header__nav ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 80px;
+  gap: 60px;
 }
-.header .header__right a {
+.header .header__body .header__nav ul li {
+  list-style-type: none;
+  cursor: pointer;
+}
+.header .header__body .header__nav ul li a {
   font-weight: bold;
   color: white;
   text-decoration: none;
-  cursor: pointer;
 }
-.header .header__right a:nth-child(4) {
-  background-color: #518164;
+.header .header__body .header__nav ul li:nth-child(4) {
+  background-color: #023047;
   border-radius: 20px;
   padding: 15px 30px;
 }
-
-.intro {
-  background-color: #5562D3;
-  height: 100vh;
-  padding: 0px 700px;
+.header .header__body .intro {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
+  padding-top: 60px;
+  height: 90vh;
 }
-.intro .intro__left {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 30px;
+.header .header__body .intro .intro__left {
+  flex: 1;
 }
-.intro .intro__left h1 {
+.header .header__body .intro .intro__left h1 {
   font-size: 4rem;
   font-weight: 900;
   color: white;
 }
-.intro .intro__left p {
+.header .header__body .intro .intro__left p {
   color: white;
   font-size: 20px;
-  width: 80%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 60%;
 }
-.intro .intro__left button {
+.header .header__body .intro .intro__left button {
   background-color: #DA722C;
   padding: 15px 30px;
   border: none;
   border-radius: 20px;
   cursor: pointer;
 }
-.intro .intro__left button a {
+.header .header__body .intro .intro__left button a {
   color: white;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
 }
-.intro .intro__right {
-  justify-self: flex-end;
+.header .header__body .intro .intro__right {
   align-self: flex-end;
 }
-.intro .intro__right img {
-  height: 500px;
+.header .header__body .intro .intro__right img {
+  height: 490px;
   vertical-align: middle;
 }
-.intro .content .content__student {
+.header .header__body .intro .content {
   position: relative;
-  top: -90px;
 }
-.intro .content .content__student .item {
+.header .header__body .intro .content .content__student {
+  position: absolute;
+  top: -180px;
+  left: -210px;
+}
+.header .header__body .intro .content .content__student .item {
   padding: 8px 32px;
   background-color: whitesmoke;
   border-radius: 20px;
@@ -94,38 +102,38 @@
   position: relative;
   z-index: 10;
 }
-.intro .content .content__student .item div {
+.header .header__body .intro .content .content__student .item div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.intro .content .content__student .item h3 {
+.header .header__body .intro .content .content__student .item h3 {
   color: #023047;
   font-size: 30px;
   font-weight: bold;
 }
-.intro .content .content__student .item p {
+.header .header__body .intro .content .content__student .item p {
   text-align: center;
   color: #023047;
   font-size: 20px;
 }
-.intro .content .content__student .shadow {
+.header .header__body .intro .content .content__student .shadow {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #3B448F;
+  background-image: linear-gradient(#6F7DFB 0%, #3B448F 100%);
   border-radius: 24px;
   top: 8px;
   left: 8px;
   z-index: 1;
 }
-.intro .content .content__rating {
-  position: relative;
-  top: 40px;
-  left: -30px;
+.header .header__body .intro .content .content__rating {
+  position: absolute;
+  top: 0px;
+  left: -260px;
 }
-.intro .content .content__rating .item {
+.header .header__body .intro .content .content__rating .item {
   padding: 8px 32px;
   background-color: whitesmoke;
   border-radius: 20px;
@@ -133,63 +141,61 @@
   position: relative;
   z-index: 10;
 }
-.intro .content .content__rating .item div {
+.header .header__body .intro .content .content__rating .item div {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
 }
-.intro .content .content__rating .item h3 {
+.header .header__body .intro .content .content__rating .item h3 {
   color: #023047;
   font-size: 30px;
   font-weight: bold;
 }
-.intro .content .content__rating .item p {
+.header .header__body .intro .content .content__rating .item p {
   text-align: center;
   color: #023047;
   font-size: 20px;
 }
-.intro .content .content__rating .shadow {
+.header .header__body .intro .content .content__rating .shadow {
   position: absolute;
   height: 100%;
   width: 100%;
-  background-color: #3B448F;
+  background-image: linear-gradient(#6F7DFB 0%, #3B448F 100%);
   border-radius: 24px;
   top: 8px;
   left: 8px;
   z-index: 1;
 }
 
-.what {
+.contact {
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 100px;
-  padding: 100px 700px;
+  max-width: 1134px;
+  margin: 80px auto;
 }
-.what .what__left {
+.contact .left {
   position: relative;
 }
-.what .what__left .bg {
+.contact .left .bg {
   background-color: #023047;
   width: 30px;
-  height: 550px;
+  height: 500px;
   border-radius: 20px;
   position: absolute;
   left: 100px;
-  top: -50px;
+  top: -30px;
 }
-.what .what__left .left__content {
-  width: 80%;
-}
-.what .what__left .left__content .content1 {
+.contact .left .left__content .content1 {
   position: relative;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
   background-color: white;
   margin-bottom: 50px;
   border-radius: 20px;
 }
-.what .what__left .left__content .content1 .content__header {
+.contact .left .left__content .content1 .content__header {
   background-color: #6F7DFB;
   padding: 20px;
   border-radius: 20px;
@@ -197,33 +203,33 @@
   font-weight: bold;
   color: white;
 }
-.what .what__left .left__content .content1 .content__body {
+.contact .left .left__content .content1 .content__body {
   padding: 30px 30px;
 }
-.what .what__left .left__content .content1 .content__body h4 {
+.contact .left .left__content .content1 .content__body h4 {
   font-size: 32px;
   font-weight: bold;
   color: #023047;
 }
-.what .what__left .left__content .content1 .content__body p {
+.contact .left .left__content .content1 .content__body p {
   font-size: 20px;
   color: #023047;
 }
-.what .what__left .left__content .content1 img {
+.contact .left .left__content .content1 img {
   width: 120px;
   height: 120px;
   position: absolute;
   right: 25px;
   bottom: 20px;
 }
-.what .what__left .left__content .content2 {
+.contact .left .left__content .content2 {
   position: relative;
   left: 20px;
   box-shadow: 0px 10px 40px rgba(0, 0, 0, 0.2);
   background-color: white;
   border-radius: 20px;
 }
-.what .what__left .left__content .content2 .content__header {
+.contact .left .left__content .content2 .content__header {
   background-color: #DA722C;
   padding: 20px;
   border-radius: 20px;
@@ -231,38 +237,37 @@
   font-weight: bold;
   color: white;
 }
-.what .what__left .left__content .content2 .content__body {
+.contact .left .left__content .content2 .content__body {
   padding: 30px 30px;
 }
-.what .what__left .left__content .content2 .content__body h4 {
+.contact .left .left__content .content2 .content__body h4 {
   font-size: 32px;
   font-weight: bold;
   color: #023047;
 }
-.what .what__left .left__content .content2 .content__body p {
+.contact .left .left__content .content2 .content__body p {
   font-size: 20px;
   color: #023047;
 }
-.what .what__left .left__content .content2 img {
+.contact .left .left__content .content2 img {
   width: 120px;
   height: 120px;
   position: absolute;
   right: 25px;
   bottom: 20px;
 }
-.what .what__right h2 {
+.contact .right h2 {
   font-size: 60px;
   color: #023047;
   font-weight: bold;
-  width: 80%;
 }
-.what .what__right p {
+.contact .right p {
   color: #023047;
   font-size: 20px;
   font-weight: 400;
   margin-top: 10px;
 }
-.what .what__right button {
+.contact .right button {
   margin-top: 30px;
   background-color: #DA722C;
   padding: 15px 30px;
@@ -270,9 +275,208 @@
   border-radius: 20px;
   cursor: pointer;
 }
-.what .what__right button a {
+.contact .right button a {
   color: white;
   text-decoration: none;
   font-size: 20px;
   font-weight: bold;
+}
+
+.container__courses {
+  background-image: linear-gradient(#6F7DFB, #26308C);
+}
+.container__courses .courses {
+  position: relative;
+  max-width: 1134px;
+  margin: auto;
+  padding: 70px 0px 200px 0px;
+}
+.container__courses .courses h2 {
+  text-align: center;
+  font-size: 60px;
+  font-weight: bolder;
+  color: white;
+  padding-bottom: 80px;
+}
+.container__courses .courses .item {
+  display: flex;
+  justify-content: space-between;
+}
+.container__courses .courses .item .item__left,
+.container__courses .courses .item .item__right {
+  background-color: white;
+  padding: 0px 35px 60px 35px;
+  border-radius: 20px;
+  position: relative;
+}
+.container__courses .courses .item .item__left img,
+.container__courses .courses .item .item__right img {
+  width: 440px;
+  height: 240px;
+  border-radius: 20px;
+}
+.container__courses .courses .item .item__left .info,
+.container__courses .courses .item .item__right .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.container__courses .courses .item .item__left .info h3,
+.container__courses .courses .item .item__right .info h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #023047;
+  margin-top: 40px;
+}
+.container__courses .courses .item .item__left .info .clock,
+.container__courses .courses .item .item__right .info .clock {
+  position: absolute;
+  left: 350px;
+  bottom: 10px;
+}
+.container__courses .courses .item .item__left .info .clock img,
+.container__courses .courses .item .item__right .info .clock img {
+  width: 20px;
+  height: 20px;
+}
+.container__courses .courses .item .item__left .info .clock span,
+.container__courses .courses .item .item__right .info .clock span {
+  font-size: 20px;
+  font-weight: bold;
+  color: #023047;
+}
+.container__courses .courses .item .item__left::after,
+.container__courses .courses .item .item__right::after {
+  content: "";
+  height: 10px;
+  background-color: #023047;
+  position: absolute;
+  left: 35px;
+  right: 35px;
+  bottom: 0;
+  border-radius: 20px;
+}
+.container__courses .courses button {
+  background-color: #DA722C;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  position: absolute;
+  right: 0;
+  bottom: 80px;
+}
+.container__courses .courses button a {
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.app {
+  text-align: center;
+  margin: 40px 0 100px 0;
+}
+.app h2 {
+  font-size: 60px;
+  font-weight: bold;
+  color: #023047;
+}
+.app p {
+  margin-top: 15px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 400;
+  color: #023047;
+}
+.app .social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+.app .social .item {
+  background-color: black;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  min-width: 320px;
+  padding: 15px 30px;
+}
+.app .social .item span {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 200%;
+}
+
+.footer {
+  background-color: black;
+  padding: 70px 0;
+}
+.footer .container {
+  max-width: 1134px;
+  margin: 0 auto;
+}
+.footer .container .container__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr;
+  gap: 100px;
+}
+.footer .container .container__grid .links h3 {
+  color: #DA722C;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.footer .container .container__grid .links ul {
+  list-style-type: none;
+}
+.footer .container .container__grid .links ul li {
+  margin-bottom: 10px;
+  padding-left: 25px;
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+}
+.footer .container .container__grid .links ul li a {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  text-decoration: none;
+}
+.footer .container .container__grid .links .icon {
+  display: flex;
+  gap: 30px;
+  margin: 15px 0px 30px 25px;
+}
+.footer .container .container__grid .links .active {
+  position: relative;
+}
+.footer .container .container__grid .links .active input {
+  font-size: 15px;
+  font-weight: 400;
+  width: 100%;
+  line-height: 200%;
+  border: none;
+  border-radius: 10px;
+  padding: 6px 100px 6px 30px;
+}
+.footer .container .container__grid .links .active button {
+  font-size: 15px;
+  background-color: #023047;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  position: absolute;
+  right: 5px;
+  top: 2px;
+}
+.footer .container p {
+  color: white;
+  font-size: 20px;
+  font-weight: 400;
+  margin-top: 50px;
 }/*# sourceMappingURL=style.css.map */
