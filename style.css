@@ -17,7 +17,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 19px 0;
+  padding: 30px 0;
+  position: fixed;
+  width: 1134px;
+  z-index: 100;
 }
 .header .header__body .header__nav h2 {
   font-size: 3rem;
@@ -49,7 +52,7 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 60px;
-  height: 90vh;
+  height: 100vh;
 }
 .header .header__body .intro .intro__left {
   flex: 1;
